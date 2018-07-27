@@ -52,8 +52,9 @@
     "url": "https://github.com/dashevo/bitcore-p2p-dash.git"
   },
   "dependencies": {
-    "bitcore-lib-dash": "^0.15.2",
+    "@dashevo/dashcore-lib": "git+ssh://git@github.com/dashevo/dashcore-lib.git#feat/mndifflist",
     "bloom-filter": "^0.2.0",
+    "mocha": "^5.2.0",
     "node-buffers": "^0.1.1",
     "socks5-client": "^0.3.6"
   },
