@@ -74,12 +74,12 @@ describe('Messages', function() {
       it(name, function(done) {
         var payloadBuffer = getPayloadBuffer(commandData[command].message);
         should.exist(messages[name]);
-        var message = messages[name].fromBuffer(payloadBuffer);
+        var message = messages[name].fromBuffer(payloadBuffer); //Todo: Fails for MnListDiff
         var outputBuffer = message.getPayload();
         outputBuffer.toString('hex').should.equal(payloadBuffer.toString('hex'));
         outputBuffer.should.deep.equal(payloadBuffer);
         var expectedBuffer = new Buffer(commandData[command].message, 'hex');
-        // message.toBuffer().should.deep.equal(expectedBuffer); todo uncomment
+        message.toBuffer().should.deep.equal(expectedBuffer); //Todo: Fails for GetMnListDiff
         done();
       });
     });
