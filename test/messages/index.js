@@ -79,7 +79,7 @@ describe('Messages', function() {
         outputBuffer.toString('hex').should.equal(payloadBuffer.toString('hex'));
         outputBuffer.should.deep.equal(payloadBuffer);
         var expectedBuffer = new Buffer(commandData[command].message, 'hex');
-        message.toBuffer().should.deep.equal(expectedBuffer); //Todo: Fails for GetMnListDiff
+        message.toBuffer().should.deep.equal(expectedBuffer);
         done();
       });
     });
