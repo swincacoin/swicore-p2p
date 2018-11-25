@@ -1,7 +1,7 @@
 {
-  "name": "@dashevo/dashcore-p2p",
+  "name": "@swincacoin/swicore-p2p",
   "version": "1.1.6",
-  "description": "Interface to the dash P2P network for Dashcore",
+  "description": "Interface to the swi P2P network for Swicore",
   "author": "BitPay <dev@bitpay.com>",
   "main": "index.js",
   "scripts": {
@@ -46,14 +46,14 @@
   "keywords": [
     "bitcoin",
     "bitcore",
-    "dashcore"
+    "swicore"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/dashevo/dashcore-p2p.git"
+    "url": "https://github.com/swincacoin/swicore-p2p.git"
   },
   "dependencies": {
-    "bitcore-lib-dash": "^0.15.2",
+    "@swincacoin/swicore-lib": "swincacoin/swicore-lib",
     "bloom-filter": "^0.2.0",
     "node-buffers": "^0.1.1",
     "socks5-client": "^0.3.6"
